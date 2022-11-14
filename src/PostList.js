@@ -3,9 +3,7 @@ import Post from "./components/Post";
 import usePosts from "./hooks/usePosts";
 function PostList() {
   const [pageNumber, setPageNumber] = useState(1);
-  const { results, isLoading, isError, error, hasNextPage } =
-    usePosts(pageNumber);
-  usePosts(2);
+  const { results, isLoading, isError, error, hasNextPage } = usePosts(pageNumber);
   const intersectionObserver = useRef();
 
   // useCallback 會回傳該 callback 的 memoized 版本，它僅在依賴改變時才會更新。

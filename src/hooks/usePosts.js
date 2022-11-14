@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { getPostPage } from "../utils/api";
-const usePosts = (pageNumber = 0) => {
+const usePosts = (pageNumber = 1) => {
   const [results, setResults] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
