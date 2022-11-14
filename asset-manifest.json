@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/infinite-scroll-practise/static/css/main.3509c141.css",
+    "main.js": "/infinite-scroll-practise/static/js/main.f7cfbb10.js",
+    "index.html": "/infinite-scroll-practise/index.html",
+    "main.3509c141.css.map": "/infinite-scroll-practise/static/css/main.3509c141.css.map",
+    "main.f7cfbb10.js.map": "/infinite-scroll-practise/static/js/main.f7cfbb10.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3509c141.css",
+    "static/js/main.f7cfbb10.js"
+  ]
+}
