@@ -13,12 +13,13 @@ function PostList() {
 
       // (MDN):stops watching all of its target elements for visibility changes.
       // (video):stops looking if we already have one there.
+      // console.log(intersectionObserver.current)
       if (intersectionObserver.current)
         intersectionObserver.current.disconnect();
 
       // otherwise intersectionObserver.current = new IntersectionObserver(),and also going to receive 'callback function'
       intersectionObserver.current = new IntersectionObserver((posts) => {
-        // console.log(posts[0],posts[0].isIntersecting)
+        // console.log(posts[0].isIntersecting)
 
         // isIntersecting property is a Boolean value which is true if the target element intersects with the intersection observer's root.
         if (posts[0].isIntersecting && hasNextPage) {
@@ -26,6 +27,7 @@ function PostList() {
           setPageNumber((prev) => prev + 1);
         }
       });
+
       if (post) intersectionObserver.current.observe(post);
     },
     [isLoading, hasNextPage]
