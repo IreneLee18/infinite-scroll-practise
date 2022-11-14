@@ -5,6 +5,7 @@ const Post = ({ post }, ref) => {
     <>
         <h2>{post.title}</h2>
         <p>{post.body}</p>
+        <img src={post.image} alt="" width={100} height={100} />
         <h4>Post ID: {post.id}</h4>
     </>
 )
